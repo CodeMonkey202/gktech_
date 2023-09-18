@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Olamide Olateju Emmanuel" />
+    <meta name="keywords" content="GK TECH, Gbenga Obe GK Tech Store" />
+    <meta
+      name="description"
+      content="GK Tech is an online store where you can get all your digital accessories such as phones and tablets and powerbanks and even audio devices at affordable prices and delivered to you"
+    />
+    <meta name="application-name" content="GK TECH STORE" />
+    <title>
+      GK TECH | Online Electronics Store To Buy Your Phones,Headsets,Powerbanks
+      and more...
+    </title>
+    <style>
+      .call-order{
+        display: inline;
+      }
+      .product-actions{
+        display: flex;
+        text-align: center;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        gap: 20px;
+      }
+      .cart-add .product-call{
+        color: white !important;
+    background: none;
+    font-size: 23px;
+    position: relative;
+    bottom: 7px;
+      }
+      .social-links:hover{
+        position: relative;
+        bottom:20px;
+        transition: linear 0.6s;
+      }
+    </style>
+    <meta name="theme-color" content="yellowred" />
+    <!-- CSS FILES AND ICON BOX AND PACKS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="GK LOGO copy.jpg" />
+    <link rel="stylesheet" href="css/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="css/lib/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/lib/ionicons/css/ionicons.css" />
+    <link rel="stylesheet" href="css/lib/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/lib/lightbox/css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/lib/font-awesome/fonts/fontawesome-webfont.woff"/>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="slide.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkBtn">
+        <i class="ion-android-menu"></i>
+      </label>
+      <h2 class="logo">GK TECH</h2>
+      <a class="cartIcon" target="_blank" href="cart.html">
+        <i class="ion-ios-cart">
+          <span
+            onclick="addtoStorage()"
+            style="
+              color: white;
+              border-radius: 200px;
+              text-align: center;
+              width: 25px;
+              z-index: 200;
+              top: -5px;
+              font-size: 16px;
+              position: absolute;
+              left: 13px;
+              background: orange;
+              border: none;
+              border-radius: 70px;
+            "
+            id="cart-quantity"
+            class="cart-quantity"
+          >
+            <script>document.write(localStorage.getItem("Carts"));</script>
+          </span>
+        </i>
+      </a>
+      <ul>
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a href="#products">categories</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <div style="margin-top: 90px;display:block;" class="container-fluid">
+    
+    <div class="alert text-center alert-warning alert-dismissible fade show" role="alert">
+        <strong style="font-size: 24px;">WE CURRENTLY DELIVER WITHIN ONDO STATE!</strong>
+         <!-- You should check in on some of those fields below. -->
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+<div class="alert text-center alert-warning alert-dismissible fade show" role="alert">
+  <strong style="font-size: 24px;">Call To Order: 0810 130 9644 </strong>
+   <!-- You should check in on some of those fields below. -->
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="container-fluid rounded-bottom my-5 pt-lg-4 bg-white text-dark">
+    <p>You have <script>document.write(localStorage.getItem("Carts"));</script> items in your Cart.</p>
+</div>
+<div class="container-fluid rounded my-5 pt-5 bg-success bg-opacity-100">
+    <h2 class="text-white">Cart is Currently Unavailable at this Time.</h2>
+    <p>Call 08101309644 to Make Orders and Enquiries</p>
+</div>
+
+
+
+
+</div>
+</body>
+</html>

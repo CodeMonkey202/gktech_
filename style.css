@@ -1,0 +1,394 @@
+/* UNIVERSAL STYLE FOR ALL THE ELEMENTS */
+* {
+  padding: 0 !important;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* BODY STYLE AND Font-family too in one place */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* PICK THE NAV AND ADD A FEW FEATURES TO IT */
+nav {
+  background: rgb(255, 255, 255);
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+  box-shadow: 2px 0px 10px 0 rgb(0 0 0 / 50%);
+}
+/* navbar heading text for users and me */
+h2.logo,
+h2 {
+  color: rgb(0, 0, 0);
+  margin-right: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 35px;
+  position: sticky;
+  top: 14px;
+  font-weight: bold;
+  top:24px;
+}
+/* Select the nav(parent) ul (child) element */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+/* Select and add props to the li */
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  position: relative;
+  margin: 0 5px;
+  padding-bottom: 40px;
+  bottom: 43px;
+}
+/* Style the links in the ul */
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  /* border-radius: p; */
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: bold;
+  text-decoration: none;
+}
+a {
+  color: black !important;
+}
+/* Links Hover and also the active one in the Code too */
+a.active,
+a:hover {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  color: black;
+  transition-duration: 0.2s;
+}
+nav ul li a:hover {
+  /* text-shadow: 2px 2px grey; */
+  transform: scale(2);
+}
+/* The navbar button that is not displayed on pc but on smaller screen sizes */
+.checkBtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  display: none;
+  position: relative;
+  bottom: 0px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+/*
+  Search Icon was inserted here b4,removed bcuz
+  i wasn't running PHP Scripts any longer.
+  .searchIcon{
+    font-size: 30px;
+    color: black;
+    float: right;
+    position: relative;
+    bottom: 24px;
+    margin-right: 40px;
+    margin-bottom: 37px;
+    cursor: pointer;
+    } */
+
+/* The cart Icon */
+.cartIcon {
+  font-size: 30px;
+  color: black;
+  float: right;
+  position: relative;
+  bottom: 30px;
+  margin-right: 40px;
+  margin-bottom: 37px;
+  cursor: pointer;
+}
+/* Cart icon Hover feature */
+.cartIcon:hover {
+  font: size 30px;
+  transition: none;
+  border: none !important;
+ border-radius: 50%;
+}
+/* Checkbox is not displayed at all */
+#check {
+  display: none;
+}
+/*  */
+.product-set {
+  box-shadow: 2px 0px 10px 0 rgb(0 0 0 / 50%);
+}
+.categories a {
+  border: 2px solid skyblue;
+  text-decoration: none;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+img {
+  border-radius: 5px;
+}
+
+ @media (max-width: 1000px) {
+  .checkBtn {
+    display: block;
+  }
+   /* SELECT THE LIST  */
+  ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #efeff0;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+   /* SELECT THE UL LI--->  */
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .us ul li {
+    display: inline-block;
+  }
+  set the font size font and ul li a 
+  nav ul li a {
+    font-size: 20px;
+  }
+   nav ul li a:hover,a.active {
+      background: none;
+      color: #838485;
+      border-bottom:2px solid black;
+    } 
+  #check:checked ~ ul {
+    left: 0;
+  }
+} 
+
+
+/* section {
+    /* background: url("gk/apple-iphone-11-pro-max-4.jpg") no-repeat; 
+    background-size: cover;
+    height: calc(100vh - 80px);
+  } */
+
+.searchIcon:hover,
+.cartIcon:hover {
+  color: black;
+}
+.cartIcon {
+  color: black;
+}
+/* STYLE MY PRODUCT CARDS */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 140px;
+  margin: auto;
+  font-family: arial;
+}
+
+/*ABOUT ME SECTION */
+div.container {
+  padding: 100px;
+  box-shadow: 0px 0px 10px 0 rgb(0 0 0 / 50%);
+}
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+div.container ul li {
+  list-style: disc;
+}
+div.container ul {
+  list-style: disc;
+}
+p {
+  font-family: monospace;
+  font-size: 20px;
+  color: black;
+}
+li p {
+  font-family: sans-serif;
+}
+span {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+footer {
+  background-color: white;
+}
+
+.cart-add {
+  color: white;
+  background: #ff7100;
+  border: 2px solid #b34e09;
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+  font-size: 19px;
+  display: inline;
+}
+img {
+  width: 150px;
+}
+.row {
+  background-color: ghostwhite;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px; /*Instead of 300px */
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card-button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+/* CART NUMBER */
+span #cart-quantity .ion-ios-cart {
+  z-index: 200;
+  top: -5px;
+  font-size: 17px;
+  position: absolute;
+  left: 13px;
+  background: orange;
+  border: none;
+  border-radius: 70px;
+}
+button:hover {
+  background-color: #ff7100;
+  border: 2px solid red;
+}
+.hidden {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+#btns-hide {
+  display: none;
+}
+.inline {
+  display: inline;
+}
+.inline {
+  display: flex;
+}
+.btns-show {
+  visibility: collapse;
+}
+
+/* PRODUCT SECTION FOR THE CODING */
+.products h2{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
+
+.all-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  overflow: hidden;
+  background:#f8f8f8;
+  color: #21201e;
+  text-align: center;
+  width: 240px;
+  height: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 2rem;
+  cursor:pointer;
+}
+
+.product .product-title,
+.product .product-price {
+  font-size: 18px;
+}
+
+.product:hover img {
+  scale: 1.1;
+}
+
+.product:hover {
+  box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+
+.product a:link,.product a:visited {
+  color: #ececec;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2c3e50;
+  padding:20px 30px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  transition: all 0.2s;
+  cursor:pointer;
+}
+.btn-buy{
+  padding:20px !important;
+  cursor:pointer !important;
+  color:white !important;
+}
+a.buy-more{
+  cursor:grab;
+  border:none;
+}
+/* a.buy-more:hover{
+  text-shadow:
+} */
+div.banner{
+  margin-top:100px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  /* display: flex; */
+}
+div.all-products a{
+  border:none;
+  text-decoration:none;
+}
+.whatsapp{
+  color: green;
+}
